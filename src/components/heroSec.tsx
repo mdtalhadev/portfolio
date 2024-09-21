@@ -6,7 +6,7 @@ const HeroSec = () => {
     return (
 
 
-        <section className="relative pt-40 pb-24">
+        <section className="relative pt-40 pb-4">
             <div className="bg-gradient-to-b from-gray-800 to-gray-700 w-full absolute top-0 left-0 z-0 h-60 text-center flex items-center">
                 <div className="container mx-auto px-4">
                     <h1 className="text-5xl font-bold text-white mb-4">👋 Hey there! Welcome to My Crazy Portfolio! 🎉</h1>
