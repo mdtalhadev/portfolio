@@ -3,7 +3,7 @@ const AppBar = () => (
     <nav className="bg-gray-800 text-white py-4">
         <div className="container mx-auto px-4 flex justify-between">
             <div>
-                <a href="#" className="text-2xl font-bold">🚀 My Quickly Portfolio 🎨</a>
+                <a href="#" className="text-xl md:text-2xl lg:text-2xl xl:text-2xl  font-bold">🚀 My Quickly Portfolio 🎨</a>
                 <ul className="flex space-x-4">
                     <li><a href="#" className="hover:text-gray-300">🏠 Home</a></li>
                     <li><a href="#" className="hover:text-gray-300">💡 Projects</a></li>
