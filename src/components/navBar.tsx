@@ -13,7 +13,7 @@ const AppBar = () => (
                 <button
   className="rounded-sm border border-solid border-gray-600 py-2 px-4 text-sm font-semibold shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-50 hover:bg-gray-300 flex items-center gap-2"
 >
-  Resume
+  <span className="hidden md:flex lg:flex xl:flex">Resume</span>
   <svg
     className="w-[30px] h-[30px] text-gray-800 "
     aria-hidden="true"
