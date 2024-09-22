@@ -2,7 +2,7 @@ import Image from "next/image";
 import iContactIcons from "@/types/contactIcon";
 
 const HeroSec = () => {
-    const skills = ["Flutter", "dart", "Git", "Agile", "OOP", "DSA", '...'];
+    const skills = ["Flutter", "dart", "Git", "Agile", "OOP", "DSA",];
     const contactIcons: iContactIcons[] = [
         {
             icon: (<svg className="w-[30px] h-[30px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -28,18 +28,18 @@ const HeroSec = () => {
     return (
 
 
-        <section className="relative pt-40 pb-4">
-            <div className="bg-gradient-to-b from-gray-800 to-gray-700 w-full absolute top-0 left-0 z-0 h-60 text-center flex items-center">
+        <section className="relative pt-52  sm:pt-40 md:pt-40 lg:pt-40 xl:pt-40 pb-4">
+            <div className="bg-gradient-to-b from-gray-800 to-gray-700 w-full absolute top-0 left-0 z-0 h-60 text-center flex items-center ">
                 <div className="container mx-auto px-4">
-                    <h1 className="text-5xl font-bold text-white mb-4">👋 Hey there! Welcome to My Crazy Portfolio! 🎉</h1>
-                    <p className="mt-2 text-lg text-gray-200">I code, I design, I drink coffee (a lot), and sometimes, I even sleep! 🛌</p>
+                    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">👋 Hey there! Welcome to My Crazy Portfolio! 🎉</h1>
+                    <p className="mt-2 text-sm sm:text-md md:text-lg lg:text-lg xl:text-lg text-gray-200">I code, I design, I drink coffee (a lot), and sometimes, I even sleep! 🛌</p>
                 </div>
             </div>
-            <div className="w-full max-w-7xl mx-auto px-6 md:px-8">
-                <div className="flex items-end justify-between sm:justify-between relative z-10 mb-5 ">
-                    <Image width={200} height={200} src="/images/profile.jpg" alt="user-avatar-image" className="border-4 border-solid border-white rounded-full object-cover" />
-                    <div className="pl-4 w-full flex justify-between">
-                        <div className="flex flex-col items-start">
+            <div className="w-full max-w-7xl mx-auto px-6 md:px-8 flex flex-col ">
+                <div className="flex items-center md:items-end lg:items-end xl:items-end md:justify-between lg:justify-between xl:justify-between  justify-center relative z-10 mb-5 flex-col md:flex-row lg:flex-row xl:flex-row ">
+                    <Image width={200} height={200} src="/images/profile.jpg" alt="user-avatar-image" className="border-4 border-solid border-white rounded-full object-cover w-24 sm:w-28 md:w-52 lg:w-52 xl:w-56" />
+                    <div className="pl-4 w-full flex justify-between flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row">
+                        <div className="flex flex-col items-center sm:items-start md:items-start lg:items-start xl:items-start">
                             <h3 className="font-manrope font-bold text-4xl text-gray-900 mb-1 max-sm:text-center">Muhammad Talha</h3>
                             <div className="flex justify-end p-0 text-gray-500"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" className="mr-1">
                                 <path className="stroke-gray-700 transition-all duration-500 group-hover:stroke-indigo-600"
@@ -47,10 +47,9 @@ const HeroSec = () => {
                                     stroke="#374151" strokeWidth="1.6" strokeLinecap="round" />
                             </svg> IT Graduate</div>
                         </div>
-                        <div className="">
-
-                            <p className="font-normal text-base leading-7 text-gray-500  max-sm:text-center">
-                                Software Engineer at FusuionWave <sub>pvt.lmtd</sub> <br className="hidden sm:block" />
+                        <div className="flex flex-col items-center sm:items-end md:items-end lg:items-end xl:items-end">
+                            <p className="font-normal text-base leading-7 text-gray-500  max-sm:text-center text-end">
+                                Software Engineer at FusuionWave <sub>pvt.ltd</sub> <br className="hidden sm:block" />
                             </p>
                             <div className="flex justify-end p-0 text-gray-500"><svg xmlns="http://www.w3.org/2000/svg" height={25} fillRule="evenodd" clipRule="evenodd" imageRendering="optimizeQuality" shapeRendering="geometricPrecision" textRendering="geometricPrecision" viewBox="0 0 6.827 6.827" id="location">
                                 <path fill="#a0aec0" fillRule="nonzero" d="M3.413 1.722c.239 0 .455.094.611.245a.821.821 0 0 1 0 1.184.875.875 0 0 1-.61.245.875.875 0 0 1-.611-.245.821.821 0 0 1 0-1.184.875.875 0 0 1 .61-.245zm.46.392a.659.659 0 0 0-.46-.185c-.18 0-.342.07-.46.185a.618.618 0 0 0 0 .89c.118.115.28.185.46.185s.343-.07.46-.184a.618.618 0 0 0 0-.891z"></path>
@@ -59,23 +58,22 @@ const HeroSec = () => {
                             </svg>Lahore, Pakistan</div>
                         </div>
                     </div>
-
-
                 </div>
-                <div className="flex flex-col sm:flex-row max-sm:gap-5 items-end justify-between">
-                    <div className="flex items-start flex-col">
-                        <div className="w-full flex mb-3">
-                            <div className="w-1/3 bg-white" > </div>
+                <div className="flex flex-col sm:flex-row max-sm:gap-5 items-center sm:items-end md:items-end lg:items-end xl:items-end justify-between ">
+                    <div className="flex items-center sm:items-start flex-col ">
+                        {/* <div className="w-full flex mb-3">
+                            <div className="w-1/3 bg-transparent" > 
+                            </div>
                             {contactIcons.map((icon, index) => (
                                 <button key={index}
                                     onClick={(e) => window.open(icon.link, '_blank')} className="text-blue-400 hover:underline mx-2">
                                     {icon.icon}
                                 </button>))}
-                        </div>
-                        <ul className="flex items-center max-sm:justify-center max-sm:flex-wrap gap-2.5">
+                        </div> */}
+                        <ul className="flex items-center max-sm:justify-center max-sm:flex-wrap gap-2.5 flex-wrap">
                             {skills.map((skill, index) => (
                                 <li key={index}
-                                    className="rounded-full py-3 px-6 bg-stone-100 text-gray-700 font-semibold text-sm leading-6 transition-all duration-500 hover:bg-stone-200 hover:text-gray-900">{skill}</li>
+                                    className="rounded-full py-3 px-4 bg-stone-100 text-gray-700 font-semibold text-sm leading-6 transition-all duration-500 hover:bg-stone-200 hover:text-gray-900">{skill}</li>
                             ))}
 
 
@@ -96,31 +94,31 @@ const HeroSec = () => {
                     </div>
 
                 </div>
-                {/* <div className="flex flex-col lg:flex-row max-lg:gap-5 items-center justify-between py-0.5">
-
-                    <div className="flex flex-col md:flex-row items-center gap-6 ">
-                        <p className="flex items-center gap-2 font-medium text-lg leading-8 text-gray-400 ">Skills
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8.78135 5.55191C9.4453 3.5173 9.77728 2.5 10.3928 2.5C11.0083 2.5 11.3403 3.5173 12.0043 5.55191L12.2949 6.44244C12.4784 7.00479 12.5701 7.28596 12.7928 7.44706C13.0155 7.60816 13.3125 7.60816 13.9063 7.60816H14.8683C17.0355 7.60816 18.119 7.60816 18.3081 8.19335C18.4972 8.77854 17.6169 9.40763 15.8563 10.6658L15.0921 11.2118C14.6069 11.5586 14.3643 11.732 14.278 11.9937C14.1918 12.2554 14.2841 12.5382 14.4687 13.1038L14.7569 13.9872C15.4209 16.0218 15.7529 17.0391 15.2549 17.3993C14.7569 17.7595 13.8878 17.1308 12.1496 15.8733L11.3887 15.323C10.9083 14.9754 10.6681 14.8016 10.3928 14.8016C10.1175 14.8016 9.87731 14.9754 9.39687 15.323L8.63605 15.8733C6.89779 17.1308 6.02866 17.7595 5.5307 17.3993C5.03273 17.0391 5.36471 16.0218 6.02866 13.9872L6.31927 13.0966C6.50278 12.5343 6.59454 12.2531 6.50948 11.9924C6.42441 11.7318 6.18419 11.558 5.70375 11.2104L4.94293 10.6601C3.20467 9.40261 2.33555 8.77389 2.52575 8.19102C2.71596 7.60816 3.79026 7.60816 5.93886 7.60816H6.87929C7.47315 7.60816 7.77008 7.60816 7.99277 7.44706C8.21547 7.28596 8.30723 7.00479 8.49074 6.44244L8.78135 5.55191Z"
-                                    stroke="#9CA3AF" strokeWidth="1.6" />
-                            </svg>
-                        </p>
-                        <ul className="flex items-center max-sm:justify-center max-sm:flex-wrap gap-2.5">
-                            {skills.map((skill, index) => (
-                                <li key={index}
-                                    className="rounded-full py-3 px-6 bg-stone-100 text-gray-700 font-semibold text-sm leading-6 transition-all duration-500 hover:bg-stone-200 hover:text-gray-900">{skill}</li>
-                            ))}
-
-
-                        </ul>
-                    </div>
-                </div> */}
             </div>
 
         </section>
 
     );
+                // <div className="flex flex-col lg:flex-row max-lg:gap-5 items-center justify-between py-0.5">
+
+                //     <div className="flex flex-col md:flex-row items-center gap-6 ">
+                //         <p className="flex items-center gap-2 font-medium text-lg leading-8 text-gray-400 ">Skills
+                //             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                //                 <path
+                //                     d="M8.78135 5.55191C9.4453 3.5173 9.77728 2.5 10.3928 2.5C11.0083 2.5 11.3403 3.5173 12.0043 5.55191L12.2949 6.44244C12.4784 7.00479 12.5701 7.28596 12.7928 7.44706C13.0155 7.60816 13.3125 7.60816 13.9063 7.60816H14.8683C17.0355 7.60816 18.119 7.60816 18.3081 8.19335C18.4972 8.77854 17.6169 9.40763 15.8563 10.6658L15.0921 11.2118C14.6069 11.5586 14.3643 11.732 14.278 11.9937C14.1918 12.2554 14.2841 12.5382 14.4687 13.1038L14.7569 13.9872C15.4209 16.0218 15.7529 17.0391 15.2549 17.3993C14.7569 17.7595 13.8878 17.1308 12.1496 15.8733L11.3887 15.323C10.9083 14.9754 10.6681 14.8016 10.3928 14.8016C10.1175 14.8016 9.87731 14.9754 9.39687 15.323L8.63605 15.8733C6.89779 17.1308 6.02866 17.7595 5.5307 17.3993C5.03273 17.0391 5.36471 16.0218 6.02866 13.9872L6.31927 13.0966C6.50278 12.5343 6.59454 12.2531 6.50948 11.9924C6.42441 11.7318 6.18419 11.558 5.70375 11.2104L4.94293 10.6601C3.20467 9.40261 2.33555 8.77389 2.52575 8.19102C2.71596 7.60816 3.79026 7.60816 5.93886 7.60816H6.87929C7.47315 7.60816 7.77008 7.60816 7.99277 7.44706C8.21547 7.28596 8.30723 7.00479 8.49074 6.44244L8.78135 5.55191Z"
+                //                     stroke="#9CA3AF" strokeWidth="1.6" />
+                //             </svg>
+                //         </p>
+                //         <ul className="flex items-center max-sm:justify-center max-sm:flex-wrap gap-2.5">
+                //             {skills.map((skill, index) => (
+                //                 <li key={index}
+                //                     className="rounded-full py-3 px-6 bg-stone-100 text-gray-700 font-semibold text-sm leading-6 transition-all duration-500 hover:bg-stone-200 hover:text-gray-900">{skill}</li>
+                //             ))}
+
+
+                //         </ul>
+                //     </div>
+                // </div>
 }
 
 export default HeroSec;
