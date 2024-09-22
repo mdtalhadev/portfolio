@@ -1,9 +1,9 @@
 const aboutScetion = () => {
     return (
         <>
-            <div className="relative flex-1 bg-gradient-from-tl bg-gradient-to-br    from-blue-200 via-blue-50 via-[percentage:20%_70%] to-blue-200 p-4 rounded-lg shadow-lg mx-4 my-12">
+            <div className="relative flex-1 bg-gradient-from-tl bg-gradient-to-br  from-blue-200 via-blue-50 via-[percentage:20%_70%] to-blue-200 p-4 rounded-lg shadow-lg mx-4 my-2">
         
-                <p className="text-lg text-gray-600 text-center md:text-justify">
+                <p className="text-lg text-gray-600 text-justify">
                     I am an <span className="font-bold">experienced Flutter developer</span>, proficient in the <span className="font-bold">Dart language</span> and in developing for both <span className="font-bold">Android and iOS platforms</span>. I have strong expertise in <span className="font-bold">widget-based programming</span>, <span className="font-bold">state management</span>, and <span className="font-bold">delivering high-quality solutions</span>. I am committed to staying updated with <span className="font-bold">industry practices</span>, ensuring <span className="font-bold">exceptional user experiences</span> and <span className="font-bold">optimized application performance</span>. My core expertise lies in creating top-notch mobile apps for <span className="font-bold">Android, iOS, and web platforms</span>, consistently delivering high-quality solutions with a focus on <span className="font-bold">exceptional user experiences</span>.
                 </p>
 

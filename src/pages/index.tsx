@@ -1,7 +1,7 @@
 import Image from "next/image";
 import localFont from "next/font/local";
 import HeroSec from "@/components/home/heroSec";
-import AboutSec from "@/components/about_sec";
+import AboutSec from "@/components/home/about_sec";
 import ProjectsSection from "@/components/home/projects";
 import ContactSce from "@/components/home/contactSection";
 
