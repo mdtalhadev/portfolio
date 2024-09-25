@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head >
         <meta name="description" content="My portfolio website" />
-        <title>Md Talha</title>
+        {/* <title>Md Talha</title> */}
         <link rel="icon" href="/images/profile.jpg" />
       </Head>
       <body className="antialiased">
