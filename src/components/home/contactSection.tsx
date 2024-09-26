@@ -1,12 +1,14 @@
 import Link from "next/link"
+import Image from "next/image";
 
 const ContactSce = () => {
     return (
         <section className="bg-gray-200 py-16">
-            <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold mb-8 text-center">✉️ Get in Touch!</h2>
-                <div className="max-w-md mx-auto">
-                    <form action="https://fabform.io/f/xxxxx" method="post" className="space-y-4">
+            <div className="w-full px-4">
+                <h2 className="text-4xl  font-bold mb-8 text-center">✉️ Get in Touch!</h2>
+                <div className="w-full flex justify-around">
+                    <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/authentication/illustration.svg" alt="Cofee Image" width={400} height={400} className="w-1/3 hidden md:block lg:block xl:block " />
+                    <form action="https://fabform.io/f/xxxxx" method="post" className="space-y-4 p-0  sm:p-10 md:p-10 lg:p-10 xl:p10 w-full  md:w-3/5 lg:w-2/5 xl:w-2/5 ">
                         <div>
                             <label htmlFor="name" className="block font-bold mb-2">Your Name</label>
                             <input type="text" id="name" name="name" className="w-full border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" placeholder="Enter your name" />
@@ -21,7 +23,6 @@ const ContactSce = () => {
                         </div>
                         <button type="submit" className="bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Send Message 🚀</button>
                     </form>
-                    <p className="mt-4 text-center">Prefer email? Send me an email <Link href="https://veilmail.io/irish-geoff" className="text-blue-600 font-bold hover:underline">https://veilmail.io/irish-geoff</Link> instead!</p>
                 </div>
             </div>
         </section >

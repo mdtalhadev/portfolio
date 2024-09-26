@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  scrollbar-width: thin;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,3 +26,5 @@ body {
     text-wrap: balance;
   }
 }
+
+
