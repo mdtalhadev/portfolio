@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const AppBar = () => (
 
     <nav className="bg-gray-800 text-white py-4">
@@ -5,8 +7,8 @@ const AppBar = () => (
             <div>
                 <a href="#" className="text-xl md:text-2xl lg:text-2xl xl:text-2xl  font-bold">🚀 My Quickly Portfolio 🎨</a>
                 <ul className="flex space-x-4">
-                    <li><a href="#" className="hover:text-gray-300">🏠 Home</a></li>
-                    <li><a href="#" className="hover:text-gray-300">💡 Projects</a></li>
+                    <li><Link href="/" className="hover:text-gray-300">🏠 Home</Link></li>
+                    <li><Link href="/projects" className="hover:text-gray-300">💡 Projects</Link></li>
                 </ul>
             </div>
             <div>

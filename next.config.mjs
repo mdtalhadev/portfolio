@@ -9,6 +9,12 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.ryddel.com',
+        port: '',
+        pathname: '/**',
+      },  
     ],
     // domains: ['via.placeholder.com']
   }

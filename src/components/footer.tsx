@@ -25,7 +25,7 @@ const Footer = () => {
         //     ), link: ''
         // },
         {
-            icon: (<svg xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 32 32" id="linked" width={12}>
+            icon: (<svg xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 32 32" id="linked" width={25}>
                 <g>
                     <path fill="#FFF" d="M16 31.25C7.591 31.25.75 24.409.75 16S7.591.75 16 .75 31.25 7.591 31.25 16 24.409 31.25 16 31.25z"></path>
                     <path fill="#E8E8E8" d="M16 1.5c7.995 0 14.5 6.505 14.5 14.5S23.995 30.5 16 30.5 1.5 23.995 1.5 16 8.005 1.5 16 1.5M16 0C7.163 0 0 7.163 0 16c0 8.836 7.163 16 16 16s16-7.164 16-16c0-8.837-7.163-16-16-16z"></path>
@@ -34,7 +34,7 @@ const Footer = () => {
             </svg>), link: ''
         },
         {
-            icon: (<svg xmlns="http://www.w3.org/2000/svg" height={22} fillRule="evenodd" clipRule="evenodd" imageRendering="optimizeQuality" shapeRendering="geometricPrecision" textRendering="geometricPrecision" viewBox="0 0 13333.33 13333.33" id="instagram">
+            icon: (<svg xmlns="http://www.w3.org/2000/svg" height={40} fillRule="evenodd" clipRule="evenodd" imageRendering="optimizeQuality" shapeRendering="geometricPrecision" textRendering="geometricPrecision" viewBox="0 0 13333.33 13333.33" id="instagram">
                 <circle cx="6666.67" cy="6666.67" r="4358.02" fill="#FFF"></circle>
                 <path fill="#333" d="M7884.98 4445.25l-2436.63 0c-544.52,0 -990.17,445.65 -990.17,990.17l0 2462.49c0,544.52 445.65,990.17 990.17,990.17l2436.63 0c544.52,0 990.17,-445.65 990.17,-990.17l0 -2462.49c0,-544.52 -445.65,-990.17 -990.17,-990.17zm581.02 3224.51l0 0c0,442.61 -363.52,806.13 -806.13,806.13l-1984.89 0c-444.13,0 -806.13,-363.52 -806.13,-806.13l0 -2004.67c0,-444.13 362,-806.13 806.13,-806.13l1984.89 0c442.61,0 806.13,362 806.13,806.13l0 2004.67z"></path>
                 <path fill="#333" fillRule="nonzero" d="M6666.67 5570.79c-603.83,0 -1095.12,492.8 -1095.12,1096.64 0,603.83 491.28,1095.11 1095.12,1095.11 603.83,0 1096.64,-491.28 1096.64,-1095.11 0,-603.83 -492.8,-1096.64 -1096.64,-1096.64zm0 1822.15l0 0c-400.02,0 -725.52,-325.49 -725.52,-725.51 0,-400.02 325.5,-725.51 725.52,-725.51 400.02,0 725.52,325.49 725.52,725.51 0,400.02 -325.49,725.51 -725.52,725.51z"></path>
@@ -43,7 +43,7 @@ const Footer = () => {
             </svg>), link: ''
         },
         {
-            icon: (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="facebook" width={12}>
+            icon: (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="facebook" width={25}>
                 <path fill="#fff" d="M1024,512C1024,229.23016,794.76978,0,512,0S0,229.23016,0,512c0,255.554,187.231,467.37012,432,505.77777V660H302V512H432V399.2C432,270.87982,508.43854,200,625.38922,200,681.40765,200,740,210,740,210V336H675.43713C611.83508,336,592,375.46667,592,415.95728V512H734L711.3,660H592v357.77777C836.769,979.37012,1024,767.554,1024,512Z"></path>
                 <path fill="#FFFFF" d="M711.3,660,734,512H592V415.95728C592,375.46667,611.83508,336,675.43713,336H740V210s-58.59235-10-114.61078-10C508.43854,200,432,270.87982,432,399.2V512H302V660H432v357.77777a517.39619,517.39619,0,0,0,160,0V660Z"></path>
             </svg>), link: ''
@@ -52,10 +52,11 @@ const Footer = () => {
 
 
 
-    return (<footer className="bg-gray-800 text-white py-8 ">
+    return (<footer className="bg-gray-800 text-white pt-4  pb-3">
         <div className="container mx-auto px-4 text-center ">
-            <p>&copy; 2024 My Quirky Portfolio. All rights reserved. Designed with ❤️ by Muhammad Talha</p>
-            <p className="flex items-center justify-center">feel free to contact on
+            <p>&copy; 2024 My Quirky Portfolio. All rights reserved. Designed by Muhammad Talha</p>
+            <p className="flex items-center justify-center">
+                {/* feel free to contact on */}
                 {contactIcons.map((icon, index) => (
                     <button key={index}
                     onClick={(e) => window.open(icon.link, '_blank')}  className="text-blue-400 hover:underline mx-2">
@@ -65,6 +66,8 @@ const Footer = () => {
 
 
                     </button>))}
+
+                
             </p>
         </div>
     </footer>
