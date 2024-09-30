@@ -19,7 +19,7 @@ const isPrime = (num: number): boolean => {
   return num > 1;
 };
 
-const CarouselComponent: React.FC<CarouselProps> = ({ title, description, images, index, colaboration = false, appStoreLink, playStoreLink, technologies }) => {
+const CarouselComponent: React.FC<CarouselProps> = ({ title, description, images=[], index, colaboration = false, appStoreLink, playStoreLink, technologies=[] }) => {
   const settings: Settings = {
     dots: true,
     infinite: true,
@@ -65,7 +65,7 @@ const CarouselComponent: React.FC<CarouselProps> = ({ title, description, images
                   Technologies:
                 </h3>
                 <div className="flex gap-2 justify-center items-center flex-wrap">
-                  {technologies?.map((technology, index) => (
+                  {technologies.map((technology, index) => (
                     <span
                       key={index}
                       className={`text-gray-900 text-sm font-normal leading-normal bg-gray-200 dark:bg-gray-800 dark:text-white px-3 py-1 rounded-full`}
