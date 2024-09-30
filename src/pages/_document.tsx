@@ -8,7 +8,7 @@ export default function Document() {
         {/* <title>Md Talha</title> */}
         <link rel="icon" href="/images/profile.jpg" />
       </Head>
-      <body className="antialiased" style={{scrollbarWidth: "none"}}>
+      <body className="antialiased" style={{scrollbarWidth: "none", backgroundColor:"#f3f2ee"}}>
         <Main />
         <NextScript />
       </body>

@@ -8,6 +8,7 @@ const AppBar = () => (
                 <a href="#" className="text-xl md:text-2xl lg:text-2xl xl:text-2xl  font-bold">🚀 My Quickly Portfolio 🎨</a>
                 <ul className="flex space-x-4">
                     <li><Link href="/" className="hover:text-gray-300">🏠 Home</Link></li>
+                    <li><Link href="/about" className="hover:text-gray-300">🤷‍♂️ About</Link></li>
                     <li><Link href="/projects" className="hover:text-gray-300">💡 Projects</Link></li>
                 </ul>
             </div>
