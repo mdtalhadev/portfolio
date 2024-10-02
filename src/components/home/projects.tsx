@@ -1,17 +1,38 @@
+import Slider, { Settings } from 'react-slick';
 import Image from "next/image";
 import Link from "next/link";
 interface ProjectCardProps {
     id: string,
-    image: string,
+    images: string[],
     title: string;
     description: string;
     link: string;
 }
 
 const ProjectCard = (project: ProjectCardProps) => {
+    const settings: Settings = {
+        dots: true,
+        infinite: true,
+        speed: 100,
+        slidesToShow: 1,
+        fade: true,
+        autoplay: true,
+        dotsClass: "bg-transparent flex gap-2",
+        appendDots: (dots) => (<></>)
+    
+      };
+
+
     return (
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <Image src={project.image} alt="Project Image" className="w-full h-64 object-cover" width={150} height={10} />
+            <Slider {...settings} >
+              {project.images.map((image, index) => (
+                <div key={index}>
+                  <Image src={image} alt="Project Image" className="w-full h-64 object-cover" width={150} height={200} />
+                </div>
+              ))}
+            </Slider>
+            
             <div className="p-6">
                 <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
                 <p className="text-gray-700">{project.description}</p>
@@ -22,30 +43,30 @@ const ProjectCard = (project: ProjectCardProps) => {
 }
 
 
+const projects: ProjectCardProps[] = [
+    {
+        id: new Date().getMilliseconds().toString(),
+        images: ["/images/me3mari/1.jpg","/images/me3mari/2.jpg","/images/me3mari/3.jpg"],
+        title: "me3Mari",
+        description: "A simple and easy to use platform for cunstruction and builders to manage their projects and clients.",
+        link: "https://play.google.com/store/apps/details?id=com.fusion_wave.construction_app",
+    },
+    {
+        id: new Date().getMilliseconds().toString(),
+        images: ["/images/hoyzee/1.jpg","/images/hoyzee/2.jpg","/images/hoyzee/3.jpg"],
+        title: "Hoyzee",
+        description: "An online platform for Hotels and Restaurants to manage their bookings and customers.",
+        link: "",
+    },
+    {
+        id: new Date().getMilliseconds().toString(),
+        images: ["/images/planetMatters/1.jpg","/images/planetMatters/2.jpg","/images/planetMatters/3.jpg"],
+        title: "Planet Matters",
+        description: "An application that deals with cleaning and collecting garbage to claim rewards and share achievements with friends on social media.",
+        link: "https://play.google.com/store/apps/details?id=com.planet_matters.app",
+    },
+];
 const ProjectsSection = () => {
-    const projects: ProjectCardProps[] = [
-        {
-            id: new Date().getMilliseconds().toString(),
-            image: "http://via.placeholder.com/1280x720",
-            title: "Project Title",
-            description: "This project is so cool, even my cat approves! 🐱",
-            link: "#",
-        },
-        {
-            id: new Date().getMilliseconds().toString(),
-            image: "http://via.placeholder.com/1280x720",
-            title: "Project Title",
-            description: "This project is so cool, even my cat approves! 🐱",
-            link: "#",
-        },
-        {
-            id: new Date().getMilliseconds().toString(),
-            image: "http://via.placeholder.com/1280x720",
-            title: "Project Title",
-            description: "This project is so cool, even my cat approves! 🐱",
-            link: "#",
-        },
-    ];
 
 
 
@@ -56,7 +77,7 @@ const ProjectsSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {
                         projects.map((project, index) => {
-                            return <ProjectCard image={project.image} title={project.title} description={project.description} link={project.link} key={(new Date().getMilliseconds() + index)} id={project.id} />
+                            return <ProjectCard images={project.images} title={project.title} description={project.description} link={project.link} key={(new Date().getMilliseconds() + index)} id={project.id} />
                         })
                     }
 
