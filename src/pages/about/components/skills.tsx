@@ -1,12 +1,5 @@
-import React from "react";
-import SkillList from "./skilList";
 import Image from "next/image";
 
-// Define the type for each skill category
-interface SkillCategory {
-  title: string;
-  skills: string[];
-}
 
 const skills = [
   "Flutter Framework (Dart Programming)",
@@ -65,7 +58,6 @@ const Skills: React.FC = () => {
               ))}
             </ul>
 
-            {/* <p className="text-justify">As a BSIT student, I gained skills in Object-Oriented Programming (OOP), Data Structures and Algorithms (DSA), web development, and software engineering. I also learned about networking, database management, and cybersecurity, while exploring emerging technologies like AI and cloud computing. Through practical projects, I developed strong problem-solving abilities and a deep understanding of system management.   </p> */}
           </div>
         </div>
         <Image
@@ -77,31 +69,6 @@ const Skills: React.FC = () => {
         />
       </div>
     </section>
-
-    // <section className="relative">
-    //     <div className="w-full max-w-7xl mx-auto px-6 md:px-8 flex flex-col">
-    //         <div className="flex items-center md:items-end lg:items-end xl:items-end md:justify-between lg:justify-between xl:justify-between  justify-center relative z-10 mb-5 flex-col md:flex-row lg:flex-row xl:flex-row ">
-    //             <div className="pl-4 w-full flex justify-between flex-col bg-white p-2 rounded-md shadow-md ">
-
-    //                 <div className="flex justify-between w-full"><h2 className="text-3xl font-bold mb-6">Skills</h2>
-    //                     <span>
-    //                         <button onClick={() => setShow(!show)} className="text-blue-500 border-none">
-    //                             <svg className="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-    //                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={!show ? "m19 9-7 7-7-7" : "m5 15 7-7 7 7"} />
-    //                             </svg>
-
-    //                         </button>
-
-    //                     </span> </div>
-    //                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-8">
-    //                     {skillsData.map((skillCategory, index, ) => (
-    //                         <SkillList key={index} title={skillCategory.title} skills={show? skillCategory.skills : []} />
-    //                     ))}
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </div>
-    // </section>
   );
 };
 
