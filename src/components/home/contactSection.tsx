@@ -8,7 +8,7 @@ const ContactSce = () => {
                 <h2 className="text-4xl  font-bold mb-8 text-center">✉️ Get in Touch!</h2>
                 <div className="w-full flex justify-around">
                     <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/authentication/illustration.svg" alt="Cofee Image" width={400} height={400} className="w-1/3 hidden md:block lg:block xl:block " />
-                    <form action="https://fabform.io/f/xxxxx" method="post" className="space-y-4 p-0  sm:p-10 md:p-10 lg:p-10 xl:p10 w-full  md:w-3/5 lg:w-2/5 xl:w-2/5 ">
+                    <form onSubmit={(e)=>alert("We are facing some issue in processing please use whatsapp for contact.")}  className="space-y-4 p-0  sm:p-10 md:p-10 lg:p-10 xl:p10 w-full  md:w-3/5 lg:w-2/5 xl:w-2/5 ">
                         <div>
                             <label htmlFor="name" className="block font-bold mb-2">Your Name</label>
                             <input type="text" id="name" name="name" className="w-full border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" placeholder="Enter your name" />

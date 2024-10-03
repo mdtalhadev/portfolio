@@ -28,7 +28,7 @@ const ProjectCard = (project: ProjectCardProps) => {
             <Slider {...settings} >
               {project.images.map((image, index) => (
                 <div key={index}>
-                  <Image src={image} alt="Project Image" className="w-full h-64 object-cover" width={150} height={200} />
+                  <Image src={image} alt="Project Image" className="w-full h-64 object-cover" width={400} height={200} />
                 </div>
               ))}
             </Slider>
