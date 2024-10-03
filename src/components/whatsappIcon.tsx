@@ -2,7 +2,7 @@ const WhatsappIcon = () => {
     return (
         <div className="fixed bottom-10 right-5">
       <button 
-                    onClick={(e) => window.open('https://wa.me/+923921466065')}>
+                    onClick={(e) => window.open('https://wa.me/+923021466065')}>
         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="50" viewBox="0 0 100 100" id="whatsapp-circle">
           <defs>
             <linearGradient id="a" x1=".5" x2=".5" y1="1" gradientUnits="objectBoundingBox">
