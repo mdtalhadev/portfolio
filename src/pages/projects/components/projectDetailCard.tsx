@@ -24,6 +24,9 @@ const CarouselComponent: React.FC<CarouselProps> = ({ title, description, images
 
     rtl: index % 2 === 0,
     autoplay: true,
+    appendDots: (dots) => (
+      <></>
+    ),
 
   };
 
@@ -73,15 +76,20 @@ const CarouselComponent: React.FC<CarouselProps> = ({ title, description, images
               </div>
                 : null}
             </div>
-            <div className='flex'>
-              { appStoreLink != null && <a href={appStoreLink} target='_blank' className="bg-transparent transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
-                <Image src={'/images/appleStore.png'} alt="playstore" width={100} height={30} className="object-contain w-32 h-8" />
-              </a>}
-              {playStoreLink != null &&   <a href={playStoreLink} target='_blank' className="transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
-                <Image src={'/images/playStoreImage.png'} alt="playstore" width={100} height={32} className="object-contain w-32 h-8"  />
-              </a>}
+             <div className='flex gap-4'>
+              {
+                appStoreLink != null && playStoreLink != null ? 
+                <>
+                <a href={appStoreLink} target='_blank' className="bg-transparent transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
+                <Image src={'/images/appleStore.png'} alt="playstore" width={100} height={30} className="object-cover w-32 h-8 rounded-sm" />
+              </a>
+                 <a href={playStoreLink} target='_blank' className="transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
+                <Image src={'/images/playStoreImage.png'} alt="playstore" width={100} height={32} className="object-cover w-32 h-8 rounded-sm"  />
+              </a>
+              </> : <p className='text-gray-400' >This app is currently in development phase.</p>
+              }
 
-            </div>
+            </div> 
           </div>
 
           {/* Carousel Section */}
